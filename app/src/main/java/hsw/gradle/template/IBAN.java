@@ -14,7 +14,9 @@ public class IBAN {
         //System.out.println(IBANnumber.length());
 
         IBANnumber = this.IBANnumber;
-
+        if(IBANnumber.substring(0, 2).equals("DE")) {
+            return false;
+        }
         if(IBANnumber.length() != 22) {
             return false;
         }
